@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Відступи між елементами */
+  padding: 24px; /* Відступи від країв */
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  position: relative;
+  overflow: hidden; /* Щоб зображення не виходило за межі контейнера */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Щоб зображення заповнювало контейнер без спотворення */
+  transition: opacity 250ms ease-in-out; /* Плавна анімація прозорості */
+}
+
+/* Ефект прозорості при наведенні */
+.gallery-image:hover {
+  opacity: 0.8;
+}
